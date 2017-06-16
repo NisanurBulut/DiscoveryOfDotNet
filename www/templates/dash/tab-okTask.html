@@ -1,0 +1,29 @@
+
+<ion-view title="Tamamlanmış Görevler">
+<ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon button-clear ion-navicon" ></button>
+  </ion-nav-buttons> 
+ 
+   <ion-content padding="true"> 
+
+  <div ng-controller="okTaskCtrl">
+
+ <ion-list>
+        <ion-item-sliding ng-repeat="task in oldtasks">
+      <ion-item ng-controller="boxCtrl"> 
+       <label class="note-date">{{task.startDate |date: "yyyy-MM-dd H:mm"}}</label>
+                    <label class="note-date">{{task.endDate |date: "yyyy-MM-dd H:mm"}}</label></br>       
+                      {{task.Title}} 
+                        <ion-option-button ng-click="infoItem(task)" class="button-royal icon ion-information"  >
+                        </ion-option-button>
+                     
+    </ion-item>
+      </ion-item-sliding>
+
+    </ion-list>
+          
+<ion-infinite-scroll on-infinite="loadMore()" distance="1%"  ng-if="nokTaskAvailable"></
+</div>
+ 
+  </ion-content>
+</ion-view>

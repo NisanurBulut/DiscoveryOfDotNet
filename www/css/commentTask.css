@@ -1,0 +1,9 @@
+.spancomment {
+  background: #007AFF !important;
+  display: inline-block !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  text-align: left !important;
+  max-width: 240px !important;
+}

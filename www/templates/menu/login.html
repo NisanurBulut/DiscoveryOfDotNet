@@ -1,0 +1,19 @@
+<ion-view view-title="Oturum Aç" name="login-view"  style="background-color:#80DEEA">
+  <ion-content class="padding" >
+  
+
+      <div class="list centerlogin" >
+      <img class= "center" src="img\asistan_project_big.png" width="200"  >
+    
+          <label class="item item-input" style="margin-top:10px">
+              <input class="padding" type="text" placeholder="Kullanıcı Adı" ng-model="data.username" required>
+          </label>
+          <label  class="item item-input">
+              <input  class="padding" type="password" placeholder="Şifre" ng-model="data.password" required>
+          </label>
+      <button class="button button-block button-calm hvr-grow"  ng-click="login()">Hesabına Giriş Yap</button>
+        </div>
+
+  </ion-content>
+</ion-view>
+

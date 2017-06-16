@@ -1,0 +1,39 @@
+<ion-view title="Not Ekle">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>     
+ <ion-nav-buttons side="right">
+   <button class="button button-icon ion-plus" ng-click="NewNoteshow()">
+        </button>  </ion-nav-buttons> 
+  <ion-content padding="true"> 
+
+  <div ng-controller="noteController">
+
+<ion-list ng-repeat="todo in todos">
+    <ion-checkbox  
+     class="animated fadeInLeft item-remove-animate animated"
+    detect-gestures gesture-type="hold"
+    on-hold="showConfirm(todo)"  
+    ng-model="todo.Complated"  
+    ng-click="toggle(todo)">
+    <table>
+    <tr>
+      <td><label class="note-date">{{todo.startDate |date: "yyyy-MM-dd H:mm:ss"}}</label></td>
+    </tr>
+    <tr>
+      <td><label class="done-{{todo.Complated}} item-text-wrap" >{{todo.Note}}</label></td>
+      <td class="itemday">
+            <span class="notify-badge">{{todo.CountDay}}</span>
+          <img src="img/day.jpg" width="40px" height="40px" style="float:right;" />
+    
+ </td>
+    </tr>
+    </table>
+
+     </ion-checkbox>  
+      
+</ion-list>
+
+  </div>
+  </ion-content>
+</ion-view>

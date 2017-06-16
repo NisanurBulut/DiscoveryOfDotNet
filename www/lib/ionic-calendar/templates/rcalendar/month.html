@@ -1,0 +1,39 @@
+<div>
+    <ion-slide-box class="monthview-slide" on-slide-changed="slideChanged($index)" does-continue="true"
+                   show-pager="false" delegate-handle="monthview-slide">
+        <ion-slide ng-repeat="view in views track by $index">
+            <table ng-if="$index===currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                <thead>
+                <tr>
+                    <th ng-repeat="day in view.dates.slice(0,7) track by day.date">
+                        <small>{{::day.date | date: formatDayHeader}}</small>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="row in [0,1,2,3,4,5]">
+                    <td ng-repeat="col in [0,1,2,3,4,5,6]" ng-click="select(view.dates[row*7+col].date, view.dates[row*7+col].events)"
+                        ng-class="getHighlightClass(view.dates[row*7+col])" ng-include="::displayEventTemplateUrl">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table ng-if="$index!==currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                <thead>
+                <tr class="text-center">
+                    <th ng-repeat="day in view.dates.slice(0,7) track by day.date">
+                        <small>{{::day.date | date: formatDayHeader}}</small>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="row in [0,1,2,3,4,5]">
+                    <td ng-repeat="col in [0,1,2,3,4,5,6]">{{view.dates[row*7+col].label}}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </ion-slide>
+    </ion-slide-box>
+    <div ng-include="::eventDetailTemplateUrl"></div>
+</div>

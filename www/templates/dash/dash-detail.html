@@ -1,0 +1,27 @@
+  <ion-view title="Alt Görevler">
+ 
+
+  <ion-content class="padding">
+   <div ng-controller="boxCtrl">
+  <ion-list   can-swipe="true" ng-repeat="subtask in subTasks">
+                    <ion-item item="task" ng-model="subtask" ng-click="infoItem(subtask)" >
+                    
+                    <label class="note-date">{{subtask.startDate |date: "yyyy-MM-dd H:mm"}}</label>
+                    <label class="note-date">{{subtask.endDate |date: "yyyy-MM-dd H:mm"}}<label class="subCount">{{subtask.subCount}}</label></label>
+                     </br>
+                    {{subtask.Title}}
+                    <ion-option-button class="button-royal icon ion-eye" 
+                    ng-click="callSubTask(subtask)">
+                        </ion-option-button>
+                        <ion-option-button ng-click="addSubTask(subtask)" class="button-calm icon ion-plus"></ion-option-button>
+                        <ion-option-button  ng-click="onItemDelete(subtask)" 
+                        class="button-assertive icon ion-trash-a"></ion-option-button>
+                         <ion-option-button ng-click="finishItem(subtask)" class="button-positive icon ion-checkmark-round"></ion-option-button>
+                        
+                        
+                    </ion-item>
+                   
+                </ion-list>
+</div>
+  </ion-content>
+</ion-view>
