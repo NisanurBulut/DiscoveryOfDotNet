@@ -11,6 +11,7 @@ If you like or are using this project to learn or start your solution, please gi
 * The .Net frameowrk is language neutral that supports more 20 languages that includes: C#, C++, VB, Java/J++, Fortran, ruby, Python...
 * C# is the most popular programming language to write applications for the .Net framework.
 
+
 #### Why Do We Need ASP.NET ?
 * Starting 1997 there was a huge push away from fat client desktop applications and a migration toward browser based web applications.
 * Asp.Net was Micsrosoft's answer in 2002 to Sun's maturing enterprise Java Platform.
@@ -25,6 +26,14 @@ If you like or are using this project to learn or start your solution, please gi
 * Can be combined with popular front-end services
 	* React, Angular, Vue
 	* Mobile apps
+
+#### MVC (Model-View-Controller) 
+* The MVC design pattern helps to enforce <b>seperation of concerns</b> to help you avoid mixing presentation logic, business logic, and data access logic together.
+* MVC (Model-View-Controller) 
+	Model: Manages the behavior and data
+	View: Manages the display of data
+	Controller: Handles page events and navigation between pages
+	<img width="50%" height="50%" src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvc.png" />
 <hr>
 ### 1.  Starfighter
 This working will show you how to :
