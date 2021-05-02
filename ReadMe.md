@@ -25,7 +25,7 @@ If you like or are using this project to learn or start your solution, please gi
 * Can be combined with popular front-end services
 	* React, Angular, Vue
 	* Mobile apps
-
+<hr>
 ### 1.  Starfighter
 This working will show you how to :
 - Use the MVC (Model View Controller) design pattern.
