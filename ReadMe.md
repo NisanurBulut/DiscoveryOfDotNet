@@ -36,23 +36,13 @@ If you like or are using this project to learn or start your solution, please gi
 <hr>
 
 #### Database Setup
-| Asp.Net CORE Web API                        | React.js App                                                     |
-|---------------------------------------------|------------------------------------------------------------------|
-| Project Creation                            | Create React js App. & App Structure.                            |
-| Define DB Model                             | Install Material UI.                                             |
-| Add Foreign Key in EF Core                  | Design a Form for Master (Order Summary).                        |
-| DB Migration                                | Populate Customer DropDown with the Collection from the API.     |
-| Create API Controller with CRUD Web Methods | Make HTTP Request to Web API from React JS & Enable CORS.        |
-| Make Post Req. / Insert an order            | Add Component to list and search all Dessert items.              |
-| Retrieve/ Fetch Existing Records            | Select Dessert Items to the Order.                               |
-| Delete an Order                             | Create Component to List Select Dessert Items and managing them. |
-|                                             | Calculate Order Grand Total.                                     |
-|                                             | Form Validation.                                                 |
-|                                             | Create an Order or Submit an Order.                              |
-|                                             | Retrieve and Display existing Order.                             |
-|                                             | Update an entire Order.                                          |
-|                                             | Notification Component.                                          |
-|                                             | Delete an entire Order.                                          |
+| Data Access Object (DAO)                      | Object Relational Mapper (ORM)                                                              |
+|-----------------------------------------------|---------------------------------------------------------------------------------------------|
+| Manually create tables                        | Allow the computer to generate database tables based on classes defined in the application. |
+| Traditional method of database access         | Auto connecting via connection string                                                       |
+| Write your own SQL statements                 | Database is updated using migrations                                                        |
+| Database manages (DBA's) useally prefer DAO's | Entity Framework is Microsoft's ORM                                                         |
+| Provides more visibility on finding problems  | Simple for basic applications                                                               |
 ### 1. Starfighter
 This working will show you how to :
 - Use the MVC (Model View Controller) design pattern.
