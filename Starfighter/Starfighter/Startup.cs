@@ -34,6 +34,7 @@ namespace Starfighter
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,7 +63,7 @@ namespace Starfighter
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Ships}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
