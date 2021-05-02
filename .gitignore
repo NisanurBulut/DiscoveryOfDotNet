@@ -1,1 +1,4 @@
 .vs/*
+/Starfighter/.vs/Starfighter
+/Starfighter/Starfighter/bin/Debug/netcoreapp3.1
+/Starfighter/Starfighter/obj
