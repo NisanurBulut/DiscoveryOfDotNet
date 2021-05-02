@@ -11,7 +11,6 @@ If you like or are using this project to learn or start your solution, please gi
 * The .Net frameowrk is language neutral that supports more 20 languages that includes: C#, C++, VB, Java/J++, Fortran, ruby, Python...
 * C# is the most popular programming language to write applications for the .Net framework.
 
-
 #### Why Do We Need ASP.NET ?
 * Starting 1997 there was a huge push away from fat client desktop applications and a migration toward browser based web applications.
 * Asp.Net was Micsrosoft's answer in 2002 to Sun's maturing enterprise Java Platform.
@@ -35,7 +34,26 @@ If you like or are using this project to learn or start your solution, please gi
 	Controller: Handles page events and navigation between pages
 	<img width="50%" height="50%" src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvc.png" />
 <hr>
-### 1.  Starfighter
+
+#### Database Setup
+| Asp.Net CORE Web API                        | React.js App                                                     |
+|---------------------------------------------|------------------------------------------------------------------|
+| Project Creation                            | Create React js App. & App Structure.                            |
+| Define DB Model                             | Install Material UI.                                             |
+| Add Foreign Key in EF Core                  | Design a Form for Master (Order Summary).                        |
+| DB Migration                                | Populate Customer DropDown with the Collection from the API.     |
+| Create API Controller with CRUD Web Methods | Make HTTP Request to Web API from React JS & Enable CORS.        |
+| Make Post Req. / Insert an order            | Add Component to list and search all Dessert items.              |
+| Retrieve/ Fetch Existing Records            | Select Dessert Items to the Order.                               |
+| Delete an Order                             | Create Component to List Select Dessert Items and managing them. |
+|                                             | Calculate Order Grand Total.                                     |
+|                                             | Form Validation.                                                 |
+|                                             | Create an Order or Submit an Order.                              |
+|                                             | Retrieve and Display existing Order.                             |
+|                                             | Update an entire Order.                                          |
+|                                             | Notification Component.                                          |
+|                                             | Delete an entire Order.                                          |
+### 1. Starfighter
 This working will show you how to :
 - Use the MVC (Model View Controller) design pattern.
 - Configure database tables using the Entity framework.
