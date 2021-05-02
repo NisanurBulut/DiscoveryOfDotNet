@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Starfighter.Models;
 
 namespace Starfighter.Data
 {
@@ -12,5 +13,6 @@ namespace Starfighter.Data
             : base(options)
         {
         }
+        public DbSet<Starfighter.Models.Ship> Ship { get; set; }
     }
 }
