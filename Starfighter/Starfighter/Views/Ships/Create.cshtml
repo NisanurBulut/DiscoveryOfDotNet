@@ -4,25 +4,40 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>Ship</h4>
-<hr />
+
 <div class="row">
-    <div class="col-md-4">
+    <div class="container ship-form">
+        <div class="ship-image">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_ship" />
+        </div>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <h3>Create a Ship</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" asp-for="Name" class="form-control" placeholder="Ship Name *" value="" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="ImageLink" class="form-control" placeholder="Ship Image" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnship" value="Crate" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="Description" class="form-control" placeholder="Ship Description *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
             </div>
         </form>
     </div>
 </div>
+
+
 
 <div>
     <a asp-action="Index">Back to List</a>
