@@ -33,7 +33,7 @@ If you like or are using this project to learn or start your solution, please gi
 	Model: Manages the behavior and data
 	View: Manages the display of data
 	Controller: Handles page events and navigation between pages
-	<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvc.png" />
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvc.png" />
 <hr>
 
 #### Database Setup
