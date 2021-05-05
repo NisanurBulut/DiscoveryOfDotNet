@@ -55,6 +55,8 @@ The pipeline specifies how the applicaiton should response to http request. When
 <img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvc2.png" />
 <hr>
 
+* <b>_ViewImports.cshtml:</b> The purpose of view is to to provide a mechanism to make directives available to razor page globally. So We dont have to add them to the pages individually.
+
 #### Database Setup
 | Data Access Object (DAO)                      | Object Relational Mapper (ORM)                                                              |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------|
