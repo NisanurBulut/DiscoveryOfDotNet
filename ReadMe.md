@@ -28,8 +28,12 @@ If you like or are using this project to learn or start your solution, please gi
 <img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/aspdotnetcore.png" />
 
 ### Without Dependency Injection
-We have three pages. And we have some common functionality that we want to use across all the three pages like email and database access. Let's imagine that on all of these pages we need access to database first so what we will create database object on all the three pages and in our case we will call tha classes. Then we will have to the the same thing: Create object of the email implementation.So we have in all the three pages for the email class. <b>Now consider a scenario what happens if in future if we want to change the implementation of how we access the database or email ?</b>
-<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/withoutdependencyinjection.png" />
+We have three pages. And we have some common functionality that we want to use across all the three pages like email and database access. Let's imagine that on all of these pages we need access to database first so what we will create database object on all the three pages and in our case we will call tha classes. Then we will have to the the same thing: Create object of the email implementation. So we have in all the three pages for the email class. <b>Now consider a scenario what happens if in future if we want to change the implementation of how we access the database or email ?</b><h2>The answer is dependency injection.</h2>
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/withoutdependencyinjection.png" /> 
+
+### With Dependecy Injection
+Our classes will be implementing those interface and we will register the interfaces in our depencency injection container as you can see in picture. We will tell dependency injection container that Iemail is an interface. When any page will need to access this functionalities it will just ask the dependency injection container to create object of this functionality and directly give us the object to use so inside the page. 
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/withdependencyinjection.png" /> 
 
 #### MVC (Model-View-Controller) 
 * The MVC design pattern helps to enforce <b>seperation of concerns</b> to help you avoid mixing presentation logic, business logic, and data access logic together.
