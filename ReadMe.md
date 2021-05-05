@@ -52,6 +52,7 @@ The pipeline specifies how the applicaiton should response to http request. When
 	View: Manages the display of data
 	Controller: Handles page events and navigation between pages
 <img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvc.png" />
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvc2.png" />
 <hr>
 
 #### Database Setup
