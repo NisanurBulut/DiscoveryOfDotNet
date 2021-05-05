@@ -25,7 +25,7 @@ If you like or are using this project to learn or start your solution, please gi
 * Can be combined with popular front-end services
 	* React, Angular, Vue
 	* Mobile apps
-<img width="50%" height="50%" src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/aspdotnetcore.png" />
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/aspdotnetcore.png" />
 
 #### MVC (Model-View-Controller) 
 * The MVC design pattern helps to enforce <b>seperation of concerns</b> to help you avoid mixing presentation logic, business logic, and data access logic together.
