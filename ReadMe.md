@@ -39,6 +39,12 @@ Our classes will be implementing those interface and we will register the interf
 The pipeline specifies how the applicaiton should response to http request. When our application receives a request from the browser, the request goes back and through the pipeline. In the pipeline we can add items that we want. Pipeline is made up of middlewares. Mvc is a middleware itself. so if we want an application to be built using mvc we need to add that middleware. Other examples could be authentication middleware, authorization middleware, session middleware, static files middleware and much more... So, what exactly happens is when our request will go throgh each middleware. It can get modified by them. and eventually it is either passed to the next middleware and if that is the last middleware in the pipeline the response is returned back to the server.
 <img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/netcorepipeline.png" /> 
 
+### MVC Routing
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/mvcrouting.png" />
+
+### Endpoints
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/endpoints.png" />
+
 #### MVC (Model-View-Controller) 
 * The MVC design pattern helps to enforce <b>seperation of concerns</b> to help you avoid mixing presentation logic, business logic, and data access logic together.
 * MVC (Model-View-Controller) 
