@@ -27,6 +27,10 @@ If you like or are using this project to learn or start your solution, please gi
 	* Mobile apps
 <img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/aspdotnetcore.png" />
 
+### Without Dependency Injection
+We have three pages. And we have some common functionality that we want to use across all the three pages like email and database access. Let's imagine that on all of these pages we need access to database first so what we will create database object on all the three pages and in our case we will call tha classes. Then we will have to the the same thing: Create object of the email implementation.So we have in all the three pages for the email class. <b>Now consider a scenario what happens if in future if we want to change the implementation of how we access the database or email ?</b>
+<img src="https://github.com/NisanurBulut/DiscoveryOfDotNet/blob/master/Assets/withoutdependencyinjection.png" />
+
 #### MVC (Model-View-Controller) 
 * The MVC design pattern helps to enforce <b>seperation of concerns</b> to help you avoid mixing presentation logic, business logic, and data access logic together.
 * MVC (Model-View-Controller) 
