@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Starfighter.Models;
 
 namespace Starfighter.Data
 {
@@ -8,5 +9,6 @@ namespace Starfighter.Data
         {
 
         }
+        public DbSet<Category> tCategory { get; set; }
     }
 }
