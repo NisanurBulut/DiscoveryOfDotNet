@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Starfighter.Data;
+using Starfighter.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,15 @@ namespace Starfighter.Controllers
 {
     public class CategoryController : Controller
     {
+        private readonly StarfighterDbContext _db;
+        public CategoryController(StarfighterDbContext db)
+        {
+            _db = db;
+        }
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Category> objList = _db.tCategory;
+            return View(objList);
         }
     }
 }
